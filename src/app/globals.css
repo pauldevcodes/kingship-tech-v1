@@ -6,6 +6,7 @@
 
 * {
     font-family: "Poppins";
+    scroll-behavior: auto;
 }
 
 body {
@@ -36,10 +37,6 @@ body {
     .translate-x-centered-offset {
         @apply translate-x-[calc(-50%_+_var(--x))];
     }
-}
-
-* {
-    scroll-behavior: smooth;
 }
 
 .homeBody {
