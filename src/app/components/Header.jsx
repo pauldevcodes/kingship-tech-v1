@@ -117,8 +117,7 @@ export default function Header() {
                                                 Security Training
                                             </Link>
                                             <Link
-                                                href="/"
-                                                // to="mentorship"
+                                                href="/mentorship"
                                                 className=' text-white hover:border-b-2 hover:border-b-orange-500'
                                             >
                                                 Mentorship
@@ -130,7 +129,7 @@ export default function Header() {
                         </AnimatePresence>
                         <li>
                             <Link
-                                href="/about"
+                                href="about"
                                 className=' capitalize opacity-75 hover:border-b-2 hover:border-b-orange-500'
                             >
                                 About
@@ -138,7 +137,7 @@ export default function Header() {
                         </li>
                         <li>
                             <a
-                                href='#contact'
+                                href="#contact"
                                 className=' capitalize opacity-75 hover:border-b-2 hover:border-b-orange-500'
                             >
                                 Contact
