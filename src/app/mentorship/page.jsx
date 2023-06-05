@@ -99,7 +99,7 @@ const Mentorship = () => {
             </span>
             <span className="text-white font-semibold text-lg text-center flex  sm:flex-col flex-row gap-5 justify-center items-center z-20">
               <BsFillCreditCardFill className="text-4xl" />
-              <span>$150,000</span>
+              <span>$500</span>
             </span>
           </div>
 
