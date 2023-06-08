@@ -1,3 +1,4 @@
+import Experts from "../components/Experts";
 import Contact from "../page sections/home/Contact";
 import Banner from "../page sections/security-training.jsx/Banner";
 import CourseDetails from "../page sections/security-training.jsx/CourseDetails";
@@ -14,6 +15,7 @@ export default function SecurityTraining() {
                 <Topics />
                 <Outline />
                 <Eligibility />
+                <Experts />
                 <Contact />
             </div>
         </main>

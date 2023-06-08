@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link'
 import {
   BsFillCalendarEventFill,
   BsFillClockFill,
@@ -53,11 +54,11 @@ const Courses = () => {
               </span>
             </div>
 
-            <div className="flex flex-col justify-center items-start">
+            <Link href="/register" className="flex flex-col justify-center items-start">
               <button className=" bg-orange-500 hover:bg-transparent border-2  py-2 px-8 rounded-lg uppercase text-white tracking-widest duration-300 ease-in-out hover:font-semibold hover:border-black hover:text-black">
                 register
               </button>
-            </div>
+            </Link>
           </div>
         </div>
         <div className="flex md:flex-row flex-col justify-around items-center border-2 p-5">
@@ -87,11 +88,11 @@ const Courses = () => {
               </span>
             </div>
 
-            <div className="flex flex-col justify-center items-start">
+            <Link href="/register" className="flex flex-col justify-center items-start">
               <button className=" bg-orange-500 hover:bg-transparent border-2  py-2 px-8 rounded-lg uppercase text-white tracking-widest duration-300 ease-in-out hover:font-semibold hover:border-black hover:text-black">
                 register
               </button>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

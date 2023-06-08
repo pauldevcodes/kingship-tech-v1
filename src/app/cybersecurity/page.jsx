@@ -14,6 +14,7 @@ export default function Cybersecurity() {
                 <Topics />
                 <Outline />
                 <Eligibility />
+                <Experts />
                 <Contact />
             </div>
 
