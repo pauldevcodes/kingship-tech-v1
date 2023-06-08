@@ -8,18 +8,19 @@ import {
 import { SlScreenDesktop } from "react-icons/sl";
 import Image_1 from "../../../public/images/security training.png";
 import Image_2 from "../../../public/images/certified cyber.png";
+import Experts from "../components/Experts";
 
 const Courses = () => {
   return (
     <div className="w-full">
-      <div className="bg-hero-desktop bg-no-repeat bg-cover min-h-[50vh] flex justify-center items-center flex-col">
-        <div className="absolute bg-black/50 w-full min-h-[50vh] top-0 left-0"></div>
+      <div className="bg-hero-desktop bg-no-repeat bg-cover min-h-screen flex justify-center items-center flex-col">
+        <div className="absolute bg-black/50 w-full min-h-screen top-0 left-0"></div>
         <div className="absolute pt-32">
           <h2 className="text-center text-4xl md:text-6xl font-semibold capitalize  text-white">
             Live courses
           </h2>
 
-          <p className="md:text-xl text-lg text-white font-normal text-center">
+          <p className="md:text-xl text-lg text-white font-normal text-center p-10">
             Welcome to our live courses! Join our learning community and expand
             your knowledge.
           </p>
@@ -33,7 +34,7 @@ const Courses = () => {
           </div>
           <div className="grid items-start justify-around lg:gap-16 md:gap-10 gap-8">
             <h2 className="text-4xl font-semibold capitalize text-start">
-              cyber security
+              cyber-security
             </h2>
             <div className="flex flex-col items-start md:gap-10 gap-6 md:flex-row justify-between w-full">
               <span className="text-black font-semibold text-lg text-center flex  sm:flex-col flex-row gap-5 md:justify-center justify-start items-center z-20">
@@ -96,6 +97,8 @@ const Courses = () => {
           </div>
         </div>
       </div>
+
+      <Experts />
     </div>
   );
 };

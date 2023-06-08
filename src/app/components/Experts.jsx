@@ -6,7 +6,7 @@ import Image3 from "../../../public/images/mentor.jpeg";
 
 export default function Experts() {
   return (
-    <section className="bg-orange-500 my-10">
+    <section className="bg-orange-500">
       <div className="max-w-screen-xl mx-auto py-10">
         <div className="flex md:flex-row flex-col justify-between items-start text-white mx-auto gap-10">
           <h2 className="text-5xl font-semibold leading-tight text-center basis-5/12">
