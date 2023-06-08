@@ -8,6 +8,7 @@ import {
 import { SlScreenDesktop } from "react-icons/sl";
 
 import Experts from "../components/Experts";
+import Contact from "../page sections/home/Contact";
 
 const Mentorship = () => {
   return (
@@ -109,6 +110,7 @@ const Mentorship = () => {
       </div>
 
       <Experts />
+      <Contact />
     </div>
   );
 };
