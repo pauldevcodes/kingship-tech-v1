@@ -7,25 +7,25 @@ export default function Contact() {
         {
             id: 1,
             label: "Contact Number",
-            value: "+1 (433) 888-6978",
+            value: "443-768-8300 / 443-600-4337",
             icon: <PhoneIcon width={25} />
         },
         {
             id: 2,
             label: "WhatsApp Number",
-            value: "+1 (433) 888-6978",
+            value: "443-600-4337",
             icon: <FaWhatsapp />
         },
         {
             id: 3,
             label: "Our Email",
-            value: "loremipsum@gmail.com",
+            value: "kingshiptechnologies@gmail.com",
             icon: <EnvelopeIcon width={25} />
         },
         {
             id: 4,
             label: "Our Location",
-            value: "Plot 4, Block 7A, Hilltop Estate, Aboru, Iyana-Ipaja",
+            value: "5671 Baltimore MD, 21060",
             icon: <MapPinIcon width={25} />
         },
     ]
