@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import instructors from '../../../../public/images/team.jpg'
+import instructors from '../../../../public/images/instructors.jpg'
 
 export default function Instructors() {
     return (
