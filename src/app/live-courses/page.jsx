@@ -73,11 +73,11 @@ const Courses = () => {
             <div className="flex flex-col items-start gap-6 md:gap-10 md:flex-row justify-between w-full">
               <span className="text-black font-semibold text-lg text-center flex  sm:flex-col flex-row gap-5 md:justify-center justify-start items-center z-20">
                 <BsFillCalendarEventFill className="text-4xl" />
-                <span>5 Weeks</span>
+                <span>12 Weeks</span>
               </span>
               <span className="text-black font-semibold text-lg text-center flex sm:flex-col flex-row gap-5 justify-center items-center z-20">
                 <BsFillClockFill className="text-4xl" />
-                <span>10am - 2:30pm</span>
+                <span>7pm - 9pm</span>
               </span>
               <span className="text-black font-semibold text-lg text-center flex sm:flex-col flex-row gap-5 justify-center items-center z-20">
                 <SlScreenDesktop className="text-4xl" />
@@ -85,7 +85,7 @@ const Courses = () => {
               </span>
               <span className="text-black font-semibold text-lg text-center flex  sm:flex-col flex-row gap-5 justify-center items-center z-20">
                 <BsFillCreditCardFill className="text-4xl" />
-                <span>$1,500</span>
+                <span>$2,000</span>
               </span>
             </div>
 
