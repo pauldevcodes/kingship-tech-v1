@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from 'next/link'
+import Link from "next/link";
 import {
   BsFillCalendarEventFill,
   BsFillClockFill,
@@ -55,14 +55,17 @@ const Courses = () => {
               </span>
             </div>
 
-            <Link href="/register" className="flex flex-col justify-center items-start">
+            <Link
+              href="/register"
+              className="flex flex-col justify-center items-start"
+            >
               <button className=" bg-orange-500 hover:bg-transparent border-2  py-2 px-8 rounded-lg uppercase text-white tracking-widest duration-300 ease-in-out hover:font-semibold hover:border-black hover:text-black">
                 register
               </button>
             </Link>
           </div>
         </div>
-        <div className="flex md:flex-row flex-col justify-around items-center border-2 p-5">
+        <div className="flex flex-col justify-around items-center border-2 p-5">
           <div className="basis-1/2">
             <Image src={Image_2} alt="" />
           </div>
@@ -77,7 +80,10 @@ const Courses = () => {
               </span>
               <span className="text-black font-semibold text-lg text-center flex sm:flex-col flex-row gap-5 justify-center items-center z-20">
                 <BsFillClockFill className="text-4xl" />
-                <span>7pm - 9pm</span>
+                <div className=" flex flex-col">
+                  <span>Mondays & Thursdays <br /> (7pm - 9pm)</span>
+                  <span>Saturdays <br /> (11am - 1pm) </span>
+                </div>
               </span>
               <span className="text-black font-semibold text-lg text-center flex sm:flex-col flex-row gap-5 justify-center items-center z-20">
                 <SlScreenDesktop className="text-4xl" />
@@ -89,7 +95,10 @@ const Courses = () => {
               </span>
             </div>
 
-            <Link href="/register" className="flex flex-col justify-center items-start">
+            <Link
+              href="/register"
+              className="flex flex-col justify-center items-start"
+            >
               <button className=" bg-orange-500 hover:bg-transparent border-2  py-2 px-8 rounded-lg uppercase text-white tracking-widest duration-300 ease-in-out hover:font-semibold hover:border-black hover:text-black">
                 register
               </button>
