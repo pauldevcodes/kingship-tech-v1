@@ -82,10 +82,10 @@ const Courses = () => {
                 <BsFillClockFill className="text-4xl" />
                 <div className=" flex flex-col">
                   <p className=" flex flex-col md:flex-row md:gap-x-1">
-                    Mondays & Thursdays <span>(7pm - 9pm)</span>
+                    Mondays & Thursdays<span>(7pm - 9pm)</span>
                   </p>
                   <p className=" flex flex-col md:flex-row md:gap-x-1">
-                    Saturdays <span>(11am - 1pm)</span>
+                    Saturday<span>(11am - 1pm)</span>
                   </p>
                 </div>
               </span>
