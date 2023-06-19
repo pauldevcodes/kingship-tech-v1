@@ -1,3 +1,4 @@
+import NotificationPopup from "./components/Popup";
 import About from "./page sections/home/About";
 import Apply from "./page sections/home/Apply";
 import Banner from "./page sections/home/Banner";
@@ -14,6 +15,7 @@ import Why from "./page sections/home/Why";
 export default function Home() {
   return (
     <main className="homeBody">
+      <NotificationPopup />
       <Banner />
       <Why />
       <CourseHighlight />

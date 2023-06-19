@@ -51,7 +51,7 @@ const Courses = () => {
               </span>
               <span className="flex flex-col gap-y-2 md:flex-row md:items-center md:gap-x-3">
                 <BsFillCreditCardFill className="text-4xl" />
-                <span>$2,000</span>
+                <span>$1,000</span>
               </span>
             </div>
 

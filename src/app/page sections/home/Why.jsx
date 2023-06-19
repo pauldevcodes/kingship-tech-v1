@@ -55,7 +55,7 @@ export default function Why() {
                     }}
                 >
                     <div className=" md:basis-1/2">
-                        <Image src={jobInterview} alt="Job Interview" />
+                        <Image src={jobInterview} alt="Job Interview" priority />
                     </div>
                     <div className=" flex flex-col gap-y-2 md:basis-1/2">
                         <h4 className=" text-orange-400 uppercase text-sm">
