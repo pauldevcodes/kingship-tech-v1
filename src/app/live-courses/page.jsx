@@ -28,35 +28,35 @@ const Courses = () => {
       </div>
 
       <div className="my-16 md:mx-14 mx-5 grid gap-10">
-        <div className="flex md:flex-row flex-col justify-around items-center border-2 p-5">
-          <div className="basis-1/2">
-            <Image src={Image_1} alt="" />
+        <div className="flex flex-col border-gray-300 border-2 rounded-md p-5 lg:flex-row lg:items-center">
+          <div className=" lg:basis-1/2">
+            <Image src={Image_1} alt="Cyber security illustration" />
           </div>
-          <div className="grid items-start justify-around lg:gap-16 md:gap-10 gap-8">
-            <h2 className="text-4xl font-semibold capitalize text-start">
+          <div className=" flex flex-col gap-y-4 lg:basis-1/2">
+            <h2 className=" text-2xl font-semibold uppercase">
               cyber-security
             </h2>
-            <div className="flex flex-col items-start md:gap-10 gap-6 md:flex-row justify-between w-full">
-              <span className="text-black font-semibold text-lg text-center flex  sm:flex-col flex-row gap-5 md:justify-center justify-start items-center z-20">
+            <div className="flex flex-col gap-y-4">
+              <span className=" flex flex-col gap-y-2 md:flex-row md:items-center md:gap-x-3">
                 <BsFillCalendarEventFill className="text-4xl" />
                 <span>5 Weeks</span>
               </span>
-              <span className="text-black font-semibold text-lg text-center flex sm:flex-col flex-row gap-5 justify-center items-center z-20">
+              <span className="flex flex-col gap-y-2 md:flex-row md:items-center md:gap-x-3">
                 <BsFillClockFill className="text-4xl" />
                 <span>10am - 2:30pm</span>
               </span>
-              <span className="text-black font-semibold text-lg text-center flex sm:flex-col flex-row gap-5 justify-center items-center z-20">
+              <span className="flex flex-col gap-y-2 md:flex-row md:items-center md:gap-x-3">
                 <SlScreenDesktop className="text-4xl" />
                 <span>Virtual live classes</span>
               </span>
-              <span className="text-black font-semibold text-lg text-center flex  sm:flex-col flex-row gap-5 justify-center items-center z-20">
+              <span className="flex flex-col gap-y-2 md:flex-row md:items-center md:gap-x-3">
                 <BsFillCreditCardFill className="text-4xl" />
                 <span>$2,000</span>
               </span>
             </div>
 
             <Link
-              href="/register"
+              href="register"
               className="flex flex-col justify-center items-start"
             >
               <button className=" bg-orange-500 hover:bg-transparent border-2  py-2 px-8 rounded-lg uppercase text-white tracking-widest duration-300 ease-in-out hover:font-semibold hover:border-black hover:text-black">
@@ -65,38 +65,42 @@ const Courses = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col justify-around items-center border-2 p-5">
-          <div className="basis-1/2">
-            <Image src={Image_2} alt="" />
+        <div className="flex flex-col border-gray-300 border-2 rounded-md p-5 lg:flex-row lg:items-center">
+          <div className=" lg:basis-1/2">
+            <Image src={Image_2} alt="Security+ illustration" />
           </div>
-          <div className="grid items-center justify-around lg:gap-16 md:gap-10 gap-8">
-            <h2 className="text-4xl font-semibold capitalize text-start">
+          <div className="flex flex-col gap-y-4 lg:basis-1/2">
+            <h2 className="text-2xl font-semibold uppercase">
               securtiy+ training
             </h2>
-            <div className="flex flex-col items-start gap-6 md:gap-10 md:flex-row justify-between w-full">
-              <span className="text-black font-semibold text-lg text-center flex  sm:flex-col flex-row gap-5 md:justify-center justify-start items-center z-20">
+            <div className="flex flex-col gap-y-4">
+              <span className="flex flex-col gap-y-2 md:flex-row md:items-center md:gap-x-3">
                 <BsFillCalendarEventFill className="text-4xl" />
                 <span>12 Weeks</span>
               </span>
-              <span className="text-black font-semibold text-lg text-center flex sm:flex-col flex-row gap-5 justify-center items-center z-20">
+              <span className="flex flex-col gap-y-2 md:flex-row md:items-center md:gap-x-3">
                 <BsFillClockFill className="text-4xl" />
                 <div className=" flex flex-col">
-                  <span>Mondays & Thursdays <br /> (7pm - 9pm)</span>
-                  <span>Saturdays <br /> (11am - 1pm) </span>
+                  <p className=" flex flex-col md:flex-row md:gap-x-1">
+                    Mondays & Thursdays <span>(7pm - 9pm)</span>
+                  </p>
+                  <p className=" flex flex-col md:flex-row md:gap-x-1">
+                    Saturdays <span>(11am - 1pm)</span>
+                  </p>
                 </div>
               </span>
-              <span className="text-black font-semibold text-lg text-center flex sm:flex-col flex-row gap-5 justify-center items-center z-20">
+              <span className="flex flex-col gap-y-2 md:flex-row md:items-center md:gap-x-3">
                 <SlScreenDesktop className="text-4xl" />
                 <span>Virtual live classes</span>
               </span>
-              <span className="text-black font-semibold text-lg text-center flex  sm:flex-col flex-row gap-5 justify-center items-center z-20">
+              <span className="flex flex-col gap-y-2 md:flex-row md:items-center md:gap-x-3">
                 <BsFillCreditCardFill className="text-4xl" />
                 <span>$2,000</span>
               </span>
             </div>
 
             <Link
-              href="/register"
+              href="register"
               className="flex flex-col justify-center items-start"
             >
               <button className=" bg-orange-500 hover:bg-transparent border-2  py-2 px-8 rounded-lg uppercase text-white tracking-widest duration-300 ease-in-out hover:font-semibold hover:border-black hover:text-black">
