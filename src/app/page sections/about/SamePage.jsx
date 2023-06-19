@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
 // images
 import Image2 from '../../../../public/images/mentorship.jpg'
-import Image3 from '../../../../public/images/team.jpg'
+import Image3 from '../../../../public/images/instructors.jpg'
 
 const animationOrder = {
     initial: 0,

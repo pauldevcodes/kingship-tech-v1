@@ -5,7 +5,7 @@ import { useScroll, useTransform, motion } from "framer-motion";
 
 import Image1 from '../../../../public/images/about banner.jpg'
 import Image2 from '../../../../public/images/mentorship.jpg'
-import Image3 from '../../../../public/images/team.jpg'
+import Image3 from '../../../../public/images/instructors.jpg'
 
 const Features = () => {
     const targetRef = useRef(null);

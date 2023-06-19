@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import Image1 from '../../../../../public/images/about banner.jpg'
 import Image2 from '../../../../../public/images/mentorship.jpg'
-import Image3 from '../../../../../public/images/team.jpg'
+import Image3 from '../../../../../public/images/instructors.jpg'
 
 const Sub = () => {
   const targetRef = useRef(null);
