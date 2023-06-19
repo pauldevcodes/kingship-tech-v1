@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Image1 from "../../../public/images/testimonialOne.jpg";
+import Image1 from "../../../public/images/expertThree.jpg";
 import Image2 from "../../../public/images/expertOne.jpg";
 import Image3 from "../../../public/images/expertTwoCropped.jpg";
 
