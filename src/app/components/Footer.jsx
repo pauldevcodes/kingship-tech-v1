@@ -58,7 +58,7 @@ export default function Footer() {
             </Link>
           </li>
           <li className=" text-base leading-[22px] text-gray-800">
-            <Link href="/" className="">
+            <Link href="blog" className="">
               Blog
             </Link>
           </li>
