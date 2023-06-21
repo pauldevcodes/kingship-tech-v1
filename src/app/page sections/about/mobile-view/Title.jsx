@@ -1,31 +1,32 @@
 'use client'
-import React from "react";
+
 import Image from "next/image";
 import Dynamic from "./Dynamic";
 import Sub from "./Sub";
 
-import Image1 from '../../../../../public/images/about banner.jpg'
-import Image2 from '../../../../../public/images/mentorship.jpg'
-import Image3 from '../../../../../public/images/instructors.jpg'
+import cyber2 from '../../../../../public/images/cyber2.jpeg'
+import cyber7 from '../../../../../public/images/cyber7.jpeg'
+import cyber10 from '../../../../../public/images/cyber10.jpeg'
 
 const Title = () => {
   return (
     <div className="mx-auto relative py-16">
       <div className="pt-20">
-        <div className="">
-          <h3 className="capitalize font-semibold text-lg md:text-xl text-center">
+        <div className=" h-full w-full mx-auto">
+          <h3 className="capitalize font-semibold text-xl md:text-5xl text-center text-white">
             Welcome to Kingship Technologies, your premier destination for
             cutting-edge cybersecurity training
           </h3>
-
-          <div className=" p-5">
-            <Image src={Image1} alt="" className="w-fit h-fit" />
-          </div>
         </div>
 
+        <div>
+          <div className=" p-5">
+            <Image src={cyber7} alt="" className="w-fit h-fit" />
+          </div>
+        </div>
         <div className="my-10">
           <div className="px-3 space-y-10">
-            <span className="text-left text-lg md:text-xl font-semibold">
+            <span className="text-left text-lg md:text-xl font-semibold text-white">
               Our Mission Is To Empower Individuals And Organizations With The
               Skills And Knowledge <br />
               <span className="text-orange-500">
@@ -34,10 +35,10 @@ const Title = () => {
               </span>
             </span>
             <div className="py-5">
-              <Image src={Image2} alt="" className="w-fit h-fit" />
+              <Image src={cyber2} alt="" className="w-fit h-fit" />
             </div>
 
-            <p className="text-left text-lg md:text-xl font-semibold">
+            <p className="text-left text-lg md:text-xl font-semibold text-white">
               That's Why We've Developed A Comprehensive Training Program
               Designed To Equip You With The Latest Tools, <br />
               <span className="text-orange-500">
@@ -48,9 +49,9 @@ const Title = () => {
 
           <div className="my-10 px-3 space-y-10">
             <div className="mx-auto p-2">
-              <Image src={Image3} alt="" className="w-fit h-fit" />
+              <Image src={cyber10} alt="" className="w-fit h-fit" />
 
-              <span className="text-lg md:text-xl font-semibold text-center">
+              <span className="text-lg md:text-xl font-semibold text-center text-white">
                 CC- Certified in Cybersecurity
                 <br />
                 <span>
@@ -62,9 +63,9 @@ const Title = () => {
             </div>
 
             <div className="mx-auto p-2">
-              <Image src={Image1} alt="" className="w-fit h-fit" />
+              <img src={cyber7} alt="" className="w-fit h-fit" />
 
-              <span className="text-lg md:text-xl font-semibold text-center">
+              <span className="text-lg md:text-xl font-semibold text-center text-white">
                 Security Plus training
                 <br />
                 <span>
@@ -75,7 +76,7 @@ const Title = () => {
               </span>
             </div>
 
-            <p className="text-left text-lg md:text-xl font-semibold">
+            <p className="text-left text-lg md:text-xl font-semibold text-white">
               <span className="text-orange-500">
                 Our Team Of Experienced Trainers Boasts A Diverse Range Of
                 Expertise In Various Aspects Of Cybersecurity,
@@ -86,7 +87,7 @@ const Title = () => {
           </div>
         </div>
       </div>
-      {/* <Dynamic /> */}
+      <Dynamic />
       <Sub />
     </div>
   );

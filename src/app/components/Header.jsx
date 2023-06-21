@@ -136,6 +136,14 @@ export default function Header() {
                             </Link>
                         </li>
                         <li>
+                            <Link
+                                href="blog"
+                                className=' capitalize opacity-75 hover:border-b-2 hover:border-b-orange-500'
+                            >
+                                Blog
+                            </Link>
+                        </li>
+                        <li>
                             <a
                                 href="#contact"
                                 className=' capitalize opacity-75 hover:border-b-2 hover:border-b-orange-500'

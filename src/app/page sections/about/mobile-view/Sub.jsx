@@ -21,7 +21,7 @@ const Sub = () => {
         <div>
           <Image src={Image1} alt="" />
         </div>
-        <h3 className="text-left text-lg md:text-xl font-semibold">
+        <h3 className="text-left text-lg md:text-xl font-semibold text-white">
           <span className="text-orange-500">
             We Combine Theoretical Knowledge With Hands-On Training,{" "}
           </span>{" "}
@@ -35,7 +35,7 @@ const Sub = () => {
         <div>
           <Image src={Image2} alt="" />
         </div>
-        <h3 className="text-left text-lg md:text-xl font-semibold">
+        <h3 className="text-left text-lg md:text-xl font-semibold text-white">
           <span className="text-orange-500">
             With Years Of Combined Experience,
           </span>
@@ -47,7 +47,7 @@ const Sub = () => {
         <div>
           <Image src={Image3} alt="" />
         </div>
-        <h3 className="text-left text-lg md:text-xl font-semibold">
+        <h3 className="text-left text-lg md:text-xl font-semibold text-white">
           <span className="text-orange-500">
             This Wealth Of Practical Experience Allows Us To Provide, 
           </span>

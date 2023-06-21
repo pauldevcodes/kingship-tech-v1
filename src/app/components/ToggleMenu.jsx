@@ -24,13 +24,18 @@ export default function ToggleMenu({ isOpen, setIsOpen }) {
         },
         {
             id: 4,
-            // url: "mentorship",
+            url: "mentorship",
             link: "mentorship"
         },
         {
             id: 5,
             url: "about",
             link: 'about'
+        },
+        {
+            id: 6,
+            url: "blog",
+            link: 'blog'
         },
     ]
 
