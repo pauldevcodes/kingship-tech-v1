@@ -2,7 +2,7 @@
 import { useTransform, useScroll, motion } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
-import cyber7 from "../../../../public/images/cyber7.jpeg";
+import instructors from "../../../../public/images/instructors.jpg";
 
 export const Collaboration = () => {
   const targetRef = useRef(null);
@@ -26,7 +26,7 @@ export const Collaboration = () => {
           <div className="flex justify-center">
             <motion.div style={{ scale, x, opacity }} className="pt-10">
               <Image
-                src={cyber7}
+                src={instructors}
                 className="h-[75vh] max-h-[45vw] w-auto object-cover"
               />
             </motion.div>
