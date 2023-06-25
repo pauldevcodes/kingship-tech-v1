@@ -63,7 +63,8 @@ export default function Contact() {
         // const res = await response.json()
         // console.log('worked.....................')
         // return res;\
-        axios.post(`https://kingship-technologies-v1.vercel.app/api/Admins/contact`, data).then(()=>console.log('worked')).catch((err)=>console.log(err))
+        axios.post(`/api/Admins/contact`, data)
+            .then(() => console.log('worked')).catch((err) => console.log(err))
     }
     return (
         <section id="contact" className=" bg-black px-5 py-7 md:px-14 md:py-14">
@@ -98,8 +99,6 @@ export default function Contact() {
                         })}
                     </div>
                 </div>
-
-
                 <div className=" bg-white p-6 rounded-md lg:basis-1/2">
                     <div className=" flex flex-col items-center gap-y-2 mb-10">
                         <h2 className=" uppercase text-orange-500 text-2xl font-bold">
@@ -110,14 +109,16 @@ export default function Contact() {
                         </p>
                     </div>
 
-                    <form  onSubmit={contactSubmit}
+                    <form method="post"  onSubmit={contactSubmit}
                         className=" flex flex-col gap-3 max-w-screen-md mx-auto lg:gap-y-8"
                     >
                         <input type="text" onChange={inputHandle} value={input.name} name="name" placeholder="Name" className=" form-input rounded-md" />
                         <input type="email" onChange={inputHandle} value={input.email} name="email" placeholder="Email" className=" form-input rounded-md" />
                         <input type="number" onChange={inputHandle} value={input.phone} name="phone" placeholder="Phone Number" className=" form-input rounded-md" />
                         <textarea name="message" placeholder=" Type your message here" onChange={inputHandle} value={input.message} className="w-full form-textarea rounded-md"></textarea>
-                        <button type="submit" className=" bg-orange-500 text-white w-fit py-2 px-6 rounded-md duration-300 ease-in-out hover:bg-black">
+                        <button
+                            type="submit"
+                            className="bg-orange-500 text-white w-fit py-2 px-6 rounded-md duration-300 ease-in-out hover:bg-black">
                             Submit
                         </button>
                     </form>
