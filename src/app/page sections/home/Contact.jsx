@@ -63,7 +63,7 @@ export default function Contact() {
         // const res = await response.json()
         // console.log('worked.....................')
         // return res;\
-        axios.post(`/api/Admins/contact`, data).then(()=>console.log('worked')).catch((err)=>console.log(err))
+        axios.post(`https://kingship-technologies-v1.vercel.app/api/Admins/contact`, data).then(()=>console.log('worked')).catch((err)=>console.log(err))
     }
     return (
         <section id="contact" className=" bg-black px-5 py-7 md:px-14 md:py-14">
