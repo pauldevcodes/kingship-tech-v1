@@ -12,11 +12,10 @@ async function connect() {
 connect();
 export async function GET() {
     await connect();
-
     const all_contact = await Contacts.find()  // try and get the lastest one for the contact ........
-    if (!all_contact) {
-        return NextResponse.json({ data:'error.....', status:404})
-    }
+    // if (!all_contact) {
+    //     return NextResponse.json({ data:'error.....', status:404})
+    // }
     return NextResponse.json({ data: all_contact, status:200})
 
 }
