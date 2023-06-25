@@ -17,6 +17,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination } from "swiper";
+import Link from "next/link"
 
 export default function Testimonials() {
     const testimonies = [
@@ -60,6 +61,7 @@ export default function Testimonials() {
 
     return (
         <section className=" px-5 py-14 md:px-14 md:py-24">
+          
             <h1 className=" capitalise text-xl font-semibold mb-10 text-center bg-gradient-to-r from-orange-500 to-black bg-auto bg-clip-text text-transparent md:text-3xl lg:mb-16">
                 Testimonials
             </h1>

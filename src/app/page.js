@@ -1,3 +1,5 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import NotificationPopup from "./components/Popup";
 import About from "./page sections/home/About";
 import Apply from "./page sections/home/Apply";
@@ -15,6 +17,7 @@ import Why from "./page sections/home/Why";
 export default function Home() {
   return (
     <main className="homeBody">
+      <Header/>
       <NotificationPopup />
       <Banner />
       <Why />
@@ -27,6 +30,7 @@ export default function Home() {
       <Apply />
       <About />
       <Contact />
+      <Footer/>
     </main>
   )
 }

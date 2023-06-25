@@ -9,10 +9,14 @@ import { SlScreenDesktop } from "react-icons/sl";
 import Image_1 from "../../../public/images/security training.png";
 import Image_2 from "../../../public/images/certified cyber.png";
 import Experts from "../components/Experts";
-
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import SectionWrapper from "../components/SectionWrapper";
 const Courses = () => {
   return (
-    <div className="w-full">
+    <>
+      {/* <Header /> */}
+      <div className="w-full">
       <div className="bg-hero-desktop bg-no-repeat bg-cover min-h-screen flex justify-center items-center flex-col">
         <div className="absolute bg-black/50 w-full min-h-screen top-0 left-0"></div>
         <div className="absolute pt-32">
@@ -112,8 +116,10 @@ const Courses = () => {
       </div>
 
       <Experts />
-    </div>
+      </div>
+      {/* <Footer/> */}
+    </>
   );
 };
 
-export default Courses;
+export default SectionWrapper(Courses);

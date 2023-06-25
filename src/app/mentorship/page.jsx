@@ -6,7 +6,7 @@ import {
   BsFillCreditCardFill,
 } from "react-icons/bs";
 import { SlScreenDesktop } from "react-icons/sl";
-
+import SectionWrapper from "../components/SectionWrapper";
 import Experts from "../components/Experts";
 import Contact from "../page sections/home/Contact";
 
@@ -115,4 +115,4 @@ const Mentorship = () => {
   );
 };
 
-export default Mentorship;
+export default SectionWrapper( Mentorship);

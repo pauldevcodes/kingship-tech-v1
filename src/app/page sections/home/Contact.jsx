@@ -1,5 +1,8 @@
+'use client'
 // library
 import { PhoneIcon, EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/solid"
+import axios from "axios"
+import React, { useState } from "react"
 import { FaWhatsapp } from "react-icons/fa"
 
 export default function Contact() {
@@ -29,7 +32,39 @@ export default function Contact() {
             icon: <MapPinIcon width={25} />
         },
     ]
+    const [input, setInput] = useState({
+        name: '',
+        phone: '',
+        email: '',
+        message: ''
+    })
+    const inputHandle = (e) => {
+        setInput({ ...input, [e.target.name]: e.target.value })
+    }
 
+    const contactSubmit = async (e) => {
+        e.preventDefault();
+        const data = {
+            name: input.name,
+            message: input.message,
+            email: input.email,
+            phone: input.phone
+        }
+        // const response =   await fetch('/api/Admins/contact', {
+        //         method: 'POST',
+        //         headers: {
+        //             'Content-Type': 'application/json'
+        //         }, 
+        //         body: JSON.stringify(data)
+        //     })
+        // if (!response.ok) {
+        //     throw new Error("Network response was not ok");
+        // }
+        // const res = await response.json()
+        // console.log('worked.....................')
+        // return res;\
+        axios.post(`/api/Admins/contact`, data).then(()=>console.log('worked')).catch((err)=>console.log(err))
+    }
     return (
         <section id="contact" className=" bg-black px-5 py-7 md:px-14 md:py-14">
             <div className=" flex flex-col gap-y-5 items-center mb-10 lg:mb-16">
@@ -75,14 +110,14 @@ export default function Contact() {
                         </p>
                     </div>
 
-                    <form
+                    <form  onSubmit={contactSubmit}
                         className=" flex flex-col gap-3 max-w-screen-md mx-auto lg:gap-y-8"
                     >
-                        <input type="text" name="name" placeholder="Name" className=" form-input rounded-md" />
-                        <input type="email" name="email" placeholder="Email" className=" form-input rounded-md" />
-                        <input type="number" name="phoneNo" placeholder="Phone Number" className=" form-input rounded-md" />
-                        <textarea name="message" placeholder=" Type your message here" className="w-full form-textarea rounded-md"></textarea>
-                        <button className=" bg-orange-500 text-white w-fit py-2 px-6 rounded-md duration-300 ease-in-out hover:bg-black">
+                        <input type="text" onChange={inputHandle} value={input.name} name="name" placeholder="Name" className=" form-input rounded-md" />
+                        <input type="email" onChange={inputHandle} value={input.email} name="email" placeholder="Email" className=" form-input rounded-md" />
+                        <input type="number" onChange={inputHandle} value={input.phone} name="phone" placeholder="Phone Number" className=" form-input rounded-md" />
+                        <textarea name="message" placeholder=" Type your message here" onChange={inputHandle} value={input.message} className="w-full form-textarea rounded-md"></textarea>
+                        <button type="submit" className=" bg-orange-500 text-white w-fit py-2 px-6 rounded-md duration-300 ease-in-out hover:bg-black">
                             Submit
                         </button>
                     </form>

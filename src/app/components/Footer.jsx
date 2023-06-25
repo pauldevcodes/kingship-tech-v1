@@ -7,6 +7,7 @@ import logo from "../../../public/images/logo.png";
 import email from "../../../public/images/icon-email.svg";
 import phone from "../../../public/images/icon-phone.svg";
 
+
 export default function Footer() {
   const socials = [
     {

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 // images
 import register from '../../../public/images/register.png'
-
+import SectionWrapper from "../components/SectionWrapper";
 const Welcome = () => {
     return (
         <section className=' bg-orange-50 min-h-screen flex flex-col justify-center items-center px-5 pt-24 md:px-14'>
@@ -41,4 +41,4 @@ const Welcome = () => {
     );
 }
 
-export default Welcome;
+export default SectionWrapper( Welcome);

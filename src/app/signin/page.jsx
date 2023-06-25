@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 // library
 import { EnvelopeIcon, LockClosedIcon } from '@heroicons/react/24/solid'
-
+import SectionWrapper from '../components/SectionWrapper'
 import signin from '../../../public/images/signin.png'
 
 const Signin = () => {
@@ -47,4 +47,4 @@ const Signin = () => {
     );
 }
 
-export default Signin;
+export default SectionWrapper( Signin);
